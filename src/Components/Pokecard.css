@@ -1,0 +1,77 @@
+/* Creating a grid for Pokecard */
+
+* {
+    box-sizing: border-box;
+  }
+
+  .header {
+    padding: 15px;
+    text-align: center;
+  
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+.grid-container{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+
+}
+
+.grid-container > div{
+
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+
+
+}
+
+h2{
+  color: blue ;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+img:hover{
+
+  animation: bounce 1s;
+}
