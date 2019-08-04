@@ -19,7 +19,7 @@ class Pokecard extends React.Component{
         const url= "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+newID(id)+".png";
         return(
             <div>
-                {id <= 4 ? (
+                {id % 2 ? (
 
                 <div className="row">
 

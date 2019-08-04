@@ -1,8 +1,14 @@
 /* Creating a grid for Pokecard */
 
-* {
-    box-sizing: border-box;
-  }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
   .header {
     padding: 15px;
@@ -36,6 +42,9 @@
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 
 }
 
